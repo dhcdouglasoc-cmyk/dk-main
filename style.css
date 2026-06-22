@@ -62,21 +62,21 @@ main ul li {
     gap: 20px;
     
 }
-.listahabilidades {
-    display: flex;
-    gap: 20px;
-    align-content: center;
-}   
-.linkprojetos {
+.linkcontato, .linkprojetos {
     text-decoration: none;
     color: #e6e6ce;
     padding: 10px 20px;
     border-radius: 5px;
 }
+.listahabilidades {
+    display: flex;
+    gap: 20px;
+    align-content: center;
+}   
+
 a {
     text-decoration: none;
-    color: #e6e6ce;
-}
+  }
 a:hover {
     color: aqua;
 }
