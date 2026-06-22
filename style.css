@@ -60,6 +60,7 @@ main ul li {
 .listacontato {
     display: flex;
     gap: 20px;
+    
 }
 .listahabilidades {
     display: flex;
@@ -71,4 +72,20 @@ main ul li {
     color: #e6e6ce;
     padding: 10px 20px;
     border-radius: 5px;
+}
+a {
+    text-decoration: none;
+    color: #e6e6ce;
+}
+a:hover {
+    color: aqua;
+}
+.afooter {
+    text-decoration: none;
+    color: aqua;
+    text-shadow: 0 0 5px black;
+}
+.afooter:hover {
+    color: #ff0000;
+    text-shadow: 0 0 5px black;
 }
