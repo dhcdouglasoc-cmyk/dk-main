@@ -28,10 +28,10 @@ header p {
     text-align: left;
 }
 header nav {
-    text-align: right;
     display: flex;
-    gap: 30px;
-    justify-content: end;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
 }
 nav a {
     text-decoration: none;
@@ -107,4 +107,12 @@ footer  {
 .afooter:hover {
     color: #ff0000;
     text-shadow: 0 0 5px black;
+}
+@media (min-width: 768px) {
+    header nav {
+        flex-direction: row;
+        justify-content: end;
+        gap: 30px;
+        text-align: center;
+    }
 }
