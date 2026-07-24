@@ -54,14 +54,17 @@ main {
 main ul {
     list-style-type: none;
     display: flex;
-    gap: 20px;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
 }
 main ul li {
     background-color: #07070A;
     color: #e6e6ce;
     padding: 10px 20px;
     border-radius: 5px;
-    width: 200px;
+    width: 100%;
+    max-width: 300px;
     text-align: center;
 }
 .listacontato {
@@ -95,7 +98,7 @@ a:hover {
     transform: scale(1.1);
 }
 footer  {
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 100%;
 }
@@ -114,5 +117,14 @@ footer  {
         justify-content: end;
         gap: 30px;
         text-align: center;
+    }
+    main ul {
+        flex-direction: row;
+        gap: 20px;
+        with: auto;
+    }
+    main ul li {
+        width: 200px;
+        max-width: none;
     }
 }
