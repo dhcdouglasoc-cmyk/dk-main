@@ -1,14 +1,22 @@
 @charset "UTF-8";
+:root {
+    --cor-texto: #000000;
+    --cor-a-hover: aqua;  
+    --cor-a-hover-footer: aqua  ;
+    --cor-fundo: #ffffff; 
+    --cor-texto-box: #2adf57; 
+    --cor-texto-footer: #000000;
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body {
-    background-color: #ffffff;
+    background-color: var(--cor-fundo);
 }
 h1, h2, p, footer {
-    color: #07070A;
+    color: var(--cor-texto);
     text-align: center;
     font-family: 'Arial', sans-serif;
 }
@@ -35,10 +43,10 @@ header nav {
 }
 nav a {
     text-decoration: none;
-    color: #07070A;  
+    color: var(--cor-texto);
 }
 nav a:hover {
-    color: aqua;
+    color: var(--cor-a-hover);
 }
 main section {
     margin-top: 20px;
@@ -59,8 +67,8 @@ main ul {
     width: 100%;
 }
 main ul li {
-    background-color: #07070A;
-    color: #e6e6ce;
+    background-color: var(--cor-texto);
+    color: var(--cor-texto-box);
     padding: 10px 20px;
     border-radius: 5px;
     width: 100%;
@@ -74,7 +82,7 @@ main ul li {
 }
 .linkcontato, .linkprojetos {
     text-decoration: none;
-    color: #e6e6ce;
+    color: var(--cor-texto-box);
     padding: 10px 20px;
     border-radius: 5px;
 }
@@ -88,14 +96,14 @@ a {
     text-decoration: none;
   }
 a:hover {
-    color: aqua;
+    color: var(--cor-a-hover);
 }
 .boxhabilidade {
     transition: transform 0.3s ease;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 .boxhabilidade:hover {
-    color: aqua;
+    color: var(--cor-a-hover);
     transform: scale(1.1);
 }
 footer  {
@@ -103,13 +111,16 @@ footer  {
     bottom: 0;
     width: 100%;
 }
+
+.pfooter {
+    color: var(--cor-texto-footer);
+}
 .afooter {
     text-decoration: none;
-    color: aqua;
     text-shadow: 0 0 5px black;
 }
 .afooter:hover {
-    color: #ff0000;
+    color: var(--cor-a-hover-footer);
     text-shadow: 0 0 5px black;
 }
 @media (min-width: 768px) {
