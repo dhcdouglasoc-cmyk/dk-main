@@ -92,6 +92,7 @@ a:hover {
 }
 .boxhabilidade {
     transition: transform 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 .boxhabilidade:hover {
     color: aqua;
@@ -121,7 +122,7 @@ footer  {
     main ul {
         flex-direction: row;
         gap: 20px;
-        with: auto;
+        width: auto;
     }
     main ul li {
         width: 200px;
